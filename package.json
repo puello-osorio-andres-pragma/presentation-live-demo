@@ -1,0 +1,21 @@
+{
+  "name": "presentation-live-demo",
+  "version": "1.0.0",
+  "description": "Servidor local de solo lectura para presentaciones con demo en vivo contra un ambiente AWS no productivo",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test --experimental-test-coverage --test-coverage-include=src/**/*.mjs --test-coverage-lines=90 --test-coverage-branches=90 --test-coverage-functions=90 \"test/**/*.test.mjs\"",
+    "package": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-api-gateway": "3.1165.0",
+    "@aws-sdk/client-cloudwatch-logs": "3.1165.0",
+    "@aws-sdk/client-ssm": "3.1165.0",
+    "@aws-sdk/client-sts": "3.1165.0"
+  }
+}

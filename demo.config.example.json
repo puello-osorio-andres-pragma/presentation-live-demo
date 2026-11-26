@@ -1,0 +1,85 @@
+{
+  "environment": "<NOMBRE_DEL_AMBIENTE>",
+  "aws": {
+    "region": "<REGION>",
+    "accountId": "<ACCOUNT_ID>",
+    "defaultProfile": "<PERFIL_SUGERIDO>",
+    "ssoStartUrl": "<SSO_START_URL>",
+    "ssoRegion": "<SSO_REGION>",
+    "roleName": "<ROL_SSO>"
+  },
+  "gateway": {
+    "baseUrl": "<URL_DEL_API_GATEWAY_CON_STAGE>",
+    "apiKeyId": "<ID_DE_LA_API_KEY>",
+    "origin": "<ORIGEN_PERMITIDO_POR_CORS>"
+  },
+  "merchant": {
+    "key": "<MERCHANT_KEY_DE_PRUEBAS>",
+    "name": "<NOMBRE_DEL_COMERCIO_DE_PRUEBAS>",
+    "productId": "<PRODUCT_ID>",
+    "amount": "<MONTO>",
+    "currency": "<MONEDA>",
+    "redirectUrl": "<URL_DE_RETORNO>",
+    "externalCustomerId": "<ID_CLIENTE_EXTERNO>"
+  },
+  "ssm": {
+    "signingSecret": "<RUTA_SSM_SECRETO_DE_FIRMA>",
+    "jwePublicKey": "<RUTA_SSM_LLAVE_PUBLICA_JWE>",
+    "jweKid": "<RUTA_SSM_KID_JWE>"
+  },
+  "biometrics": {
+    "operationId": "<OPERATION_ID_DE_PRUEBAS>"
+  },
+  "logGroups": [
+    {
+      "key": "journey",
+      "label": "<ETIQUETA_JOURNEY>",
+      "name": "<LOG_GROUP_JOURNEY>"
+    },
+    {
+      "key": "psu",
+      "label": "<ETIQUETA_PSU>",
+      "name": "<LOG_GROUP_PSU>"
+    },
+    {
+      "key": "integration",
+      "label": "<ETIQUETA_INTEGRATION>",
+      "name": "<LOG_GROUP_INTEGRATION>"
+    },
+    {
+      "key": "cognito",
+      "label": "<ETIQUETA_COGNITO>",
+      "name": "<LOG_GROUP_COGNITO>"
+    },
+    {
+      "key": "audit",
+      "label": "<ETIQUETA_AUDIT>",
+      "name": "<LOG_GROUP_AUDIT>"
+    },
+    {
+      "key": "token-issuer",
+      "label": "<ETIQUETA_TOKEN_ISSUER>",
+      "name": "<LOG_GROUP_TOKEN_ISSUER>"
+    },
+    {
+      "key": "authorizer",
+      "label": "<ETIQUETA_AUTHORIZER>",
+      "name": "<LOG_GROUP_AUTHORIZER>"
+    },
+    {
+      "key": "define-challenge",
+      "label": "<ETIQUETA_DEFINE_CHALLENGE>",
+      "name": "<LOG_GROUP_DEFINE_CHALLENGE>"
+    },
+    {
+      "key": "create-challenge",
+      "label": "<ETIQUETA_CREATE_CHALLENGE>",
+      "name": "<LOG_GROUP_CREATE_CHALLENGE>"
+    },
+    {
+      "key": "verify-challenge",
+      "label": "<ETIQUETA_VERIFY_CHALLENGE>",
+      "name": "<LOG_GROUP_VERIFY_CHALLENGE>"
+    }
+  ]
+}
